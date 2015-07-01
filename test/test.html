@@ -29,47 +29,48 @@
 <script src="../konami.min.js"></script>
 
 <script>
-//init KonamiCode
-window.addEventListener('load', function(){
+//code
+var easter_egg = function(){
+	//custom function
+	var h = window.innerHeight,
+		w = window.innerWidth,
+		img = document.createElement('img'),
 
-	new KonamiCode(function(){
-		//custom function
-		var h = window.innerHeight,
-			w = window.innerWidth,
-			img = document.createElement('img');
+		x = -200, 
+		y = -200;
 
-		var x = -200; 
-		var y = -200;
+	img.src = 'media/space_core.png';
 
-		img.src = 'media/space_core.png';
-		img.style.position = 'absolute';
-		img.style.left = x+'px';
+	img.style.position = 'absolute';
+	img.style.left = x+'px';
+	img.style.bottom = y+'px';
+	
+	document.body.appendChild(img);
+
+	//move img
+	function move(){
+		y+= 10;
+		x+= 20;
+
 		img.style.bottom = y+'px';
-		document.body.appendChild(img);
+		img.style.left = x+'px';
 
-		//move img
-		function move(){
-			y+= 10;
-			x+= 20;
-
-			img.style.bottom = y+'px';
-			img.style.left = x+'px';
-
-			if(x < w || y < h){
+		if(x < w || y < h){
 				setTimeout(move,1000/60);
-			}
-			else{
-				document.body.removeChild(img);
-			}
-		};
-		move();
+		}
+		else{
+			document.body.removeChild(img);
+		}
+	};
+	move();
 
-		//play sound file
-		document.getElementById('sound').play();
+	//play sound file
+	document.getElementById('sound').play();
 
-	});
+	}
 
-}); 
+//init KonamiCode
+new KonamiCode(easter_egg);
 
 </script>
 </body>
