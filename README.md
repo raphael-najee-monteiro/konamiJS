@@ -1,15 +1,16 @@
 # konamiJS
 
-##Usage
+## Usage
 
-```
+```js
 //custom easter-egg
-function easter_egg(){alert('spooky')};
+var easter_egg = function(){alert('spooky')};
 
 //init Konami Code
 new Konami(easter_egg);
 ```
 
-##See it live
 
-http://github.com/konamiJS
+## License
+
+MIT License
