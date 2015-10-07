@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Konami</title>
+	<style>
+	body{
+		margin: 0;
+		font: 18px sans-serif;
+	}
+	h1{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		-webkit-transform:translate(-50%,-50%);
+
+		text-transform: uppercase;
+		color: #222;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>Do the konami code</h1>
+
+<script src="konami.min.js"></script>
+<script>
+var ok = 0;
+
+
+//easter egg
+var surprise = function(){
+	alert("Spooks!");
+	ok++;
+	
+	//stop Konami process after three times
+	if(ok == 3) this.stop();
+};
+
+
+//custom code sequence
+var sequence = [38, 37, 38, 37, 40, 40];
+//Pass custom sequence as second argument
+//var fun = Konami(surprise, sequence);
+
+
+//init Konami with default Konami-code
+var fun = Konami(surprise);
+
+</script>
+</body>
+</html>
