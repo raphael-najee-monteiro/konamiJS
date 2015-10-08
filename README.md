@@ -1,7 +1,7 @@
 # konamiJS
 Make your site more fun and interactive with a small framework that lets you add Konami code functionality easily.
 
-##usage
+##Usage
 
 ```js
 //easter egg
