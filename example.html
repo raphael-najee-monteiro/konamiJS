@@ -8,22 +8,23 @@
 		margin: 0;
 		font: 18px sans-serif;
 	}
-	h1{
+	.center{
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform:translate(-50%,-50%);
 		-webkit-transform:translate(-50%,-50%);
-
+		text-align: center;
 		text-transform: uppercase;
 		color: #222;
 	}
 	</style>
 </head>
 <body>
-
-	<h1>Do the konami code</h1>
-	<p id="counter">N</p>
+	<div class="center">
+		<h1>Do the konami code</h1>
+		<h2 id="counter">N</h2>
+	</div>
 
 <script src="konami.min.js"></script>
 <script>
@@ -41,14 +42,7 @@ var surprise = function(){
 	if(!counter) this.stop();
 };
 
-
-//custom code sequence
-var sequence = [38, 37, 38, 37, 40, 40];
-//Pass custom sequence as second argument
-//var fun = Konami(surprise, sequence);
-
-
-//init Konami with default Konami-code
+//init Konami with default Konami sequence: 
 var fun = Konami(surprise);
 
 </script>
