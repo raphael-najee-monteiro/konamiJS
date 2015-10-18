@@ -1,5 +1,5 @@
 # konamiJS
-Make your site more fun and interactive with a small framework that lets you add Konami code functionality easily.
+Add some fancy Konami code functionality to your site.
 
 ##Usage
 
