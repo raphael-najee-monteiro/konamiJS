@@ -1,6 +1,8 @@
 # konamiJS
 Add some fancy Konami easter egg functionality to your site.
 
+[Example here](http://raphii97.github.io/konamiJS)
+
 ##Usage
 
 ###Init
