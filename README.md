@@ -50,3 +50,6 @@ var sequence = [38, 37, 38, 37, 40, 40];
 //Pass sequence as second argument
 Konami(surprise, sequence);
 ```
+
+###Todo
+* mobile support
