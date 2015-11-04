@@ -51,5 +51,5 @@ var sequence = [38, 37, 38, 37, 40, 40];
 Konami(surprise, sequence);
 ```
 
-###Todo
+##Todo
 * mobile support
