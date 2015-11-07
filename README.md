@@ -1,6 +1,10 @@
 # konamiJS
 Add some fancy Konami easter egg functionality to your site.
+
+[Example here](http://raphii97.github.io/konamiJS)
+
 ![Konamicode](https://github.com/raphii97/konamiJS/blob/master/img/the-code.jpg "spooks!")
+
 
 ##Usage
 
@@ -49,3 +53,6 @@ var sequence = [38, 37, 38, 37, 40, 40];
 //Pass sequence as second argument
 Konami(surprise, sequence);
 ```
+
+##Todo
+* mobile support
