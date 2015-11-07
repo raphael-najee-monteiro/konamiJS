@@ -1,26 +1,51 @@
 # konamiJS
-Make your site more fun and interactive with a small framework that lets you add Konami code functionality easily.
+Add some fancy Konami easter egg functionality to your site.
+![Konamicode](https://github.com/raphii97/konamiJS/blob/master/img/the-code.jpg "spooks!")
 
 ##Usage
 
+###Init
 ```js
-//easter egg
 var surprise = function(){
-	alert("Spooks!");
+	alert("Spooky surprise!");
+};
 
-	//stop Konami process after being run one time
+Konami(surprise);
+```
+
+###Stop the process
+The Konami function contains a method that stops its event listener: Konami.stop()
+
+####Inside the surprise function
+```js
+var surprise = function(){
+	alert("Spooky surprise!");
+	
+	//stops the event listener after calling surprise one time
 	this.stop();
 };
 
+Konami(surprise);
+```
 
-//init Konami with default Konami sequence: 
-//up, up, down, down, left, right, left, right, b, a
+####Outside
+
+```js
+var surprise = function(){
+	alert("Spooky surprise!");
+};
+
 var fun = Konami(surprise);
 
+if(condition) {
+	fun.stop();
+}
+```
 
-//custom code sequence
+###Custom code sequence
+```js
 var sequence = [38, 37, 38, 37, 40, 40];
 
-//Pass custom sequence as second argument
-var fun2 = Konami(surprise, sequence);
+//Pass sequence as second argument
+Konami(surprise, sequence);
 ```
