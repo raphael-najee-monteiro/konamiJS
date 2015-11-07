@@ -3,7 +3,7 @@ Add some fancy Konami easter egg functionality to your site.
 
 [Example here](http://raphii97.github.io/konamiJS)
 
-![Konamicode](https://github.com/raphii97/konamiJS/blob/master/img/the-code.jpg "spooks!")
+![Konamicode](https://github.com/raphii97/konamiJS/blob/master/img/kc.png "spooks!")
 
 
 ##Usage
