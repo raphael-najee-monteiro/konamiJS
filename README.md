@@ -5,9 +5,9 @@ Add some fancy Konami easter egg functionality to your site:
 ![Konamicode](https://github.com/raphii97/konamiJS/blob/master/img/kc.png "spooks!")
 
 
-##Usage
+## Usage
 
-###Init
+### Init
 ```js
 var surprise = function(){
 	alert("Spooky surprise!");
@@ -16,10 +16,10 @@ var surprise = function(){
 Konami(surprise);
 ```
 
-###Stop the process
+### Stop the process
 The Konami function contains a method that stops its event listener: Konami.stop()
 
-####Inside the surprise function
+#### Inside the surprise function
 ```js
 var surprise = function(){
 	alert("Spooky surprise!");
@@ -31,7 +31,7 @@ var surprise = function(){
 Konami(surprise);
 ```
 
-####Outside
+#### Outside
 
 ```js
 var surprise = function(){
@@ -45,7 +45,7 @@ if(condition) {
 }
 ```
 
-###Custom code sequence
+### Custom code sequence
 ```js
 var sequence = [38, 37, 38, 37, 40, 40];
 
@@ -53,5 +53,5 @@ var sequence = [38, 37, 38, 37, 40, 40];
 Konami(surprise, sequence);
 ```
 
-##Todo
+## Todo
 * mobile support
